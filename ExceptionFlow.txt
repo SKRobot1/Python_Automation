@@ -1,0 +1,16 @@
+'''
+To test exception handling
+'''
+
+def car(k):
+
+    car_dict= {'make':'Audi', 'model':'K7', 'year':'2019'}
+    try:
+        print('Here is the  car data requested:' + " " +str(car_dict[k]))
+
+    except Exception:
+        print('An exception occured, please check your code')
+    finally:
+        print('I will end the execution from here')
+
+c=car('model')
